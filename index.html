@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="pict/favicon.png">
+        <title>MOOTRIX</title>
+        <link rel="stylesheet" href="/MOOTRIX/desain.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <div class="background">
+                <nav>
+                    <img src=pict/logopenabur.png alt="Logo" class="logo">
+                    <div class="nav-links">
+                        <a href="#">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                    </div>
+                </nav>
+                <div class="text-box">
+                    <h5>Welcome to</h5>
+                    <h1>MOOTRIX</h1>
+                    <p><em>Tempat belajar matriks paling menyenangkan 🥰</em></p>
+                    <a href="content.html">
+                        <img src=pict/playbutton.png class="play">
+                    </a>
+                <div>
+                <div class="sound">
+                    <img src=pict/sound.png id="sound" width="50" height="49.9">
+                </div>
+                <audio id="moo">
+                    <source src="moosfx.mp3" type="audio/mpeg">
+                </audio>
+                <script>
+                    var moo = document.getElementById("moo");
+                    var sound = document.getElementById("sound");
+                    sound.onclick = function() {
+                        moo.play();
+                    }
+                </script>
+            <div>
+        </section>
+    </body>
+</html>
